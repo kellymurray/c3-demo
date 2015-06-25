@@ -10,6 +10,10 @@ $(function() {
               ['Other People', 90],
           ],
           type : 'pie',
+          colors: {
+            'Gamers': '#B9375C',
+            'Other People': '#593F73'
+          },
           //onclick: function (d, i) { console.log("onclick", d, i); },
           onclick: function(d, i) {
             currentState = (currentState + 1) % state.length;
